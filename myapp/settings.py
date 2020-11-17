@@ -38,7 +38,7 @@ DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 # https://warehouse.python.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['neo-craigslistscrapper.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
