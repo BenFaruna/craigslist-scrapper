@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 import os
 
 import dj_database_url
-import  django_heroku
+import django_heroku
 
 from pathlib import Path
 
@@ -27,7 +27,7 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY = '(j_-d3a0qvx=r^*07cno%@b4$x)ut8xo$#+smdk5lod)v$*=pu'
 
-SECRET_KEY = os.environ.get('GJANGO_SECRET_KEY', '(j_-d3a0qvx=r^*07cno%@b4$x)ut8xo$#+smdk5lod)v$*=pu')
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '(j_-d3a0qvx=r^*07cno%@b4$x)ut8xo$#+smdk5lod)v$*=pu')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
